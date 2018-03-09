@@ -1,5 +1,11 @@
-#include<stdio.h>
+/*
+A C-program which takes year and month as input and outputs calendar format of corresponding month and year.
+Determination of day_of_week is generalized from the competitive determination method, a representation of 
+which can be seen in this link: https://www.youtube.com/watch?v=_xnC70CY6ro
 
+Modifications can be made, for instance, a menu or action keys to change month of calendar.
+*/
+#include<stdio.h>
 int leap(int year)
 {
 	if(year%100==0) {if(year%400==0) return 1; else return 0;}
